@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <title>Meet Eloise | TEDxSFU Website Development</title>
+        <meta name="description" content="I am Eloise, a Vancouver-based interaction designer. I am passionated about bringing technology and art together to unleash exciting experience for users.">
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <!---stylesheet-->
+        <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="css/main.css"></noscript>
+        <!--scrolling effect from https://github.com/jlmakes/scrollreveal-->
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <!--in case-->
+        <script>!function(w){"use strict";var loadCSS=function(href,before,media){function loadCB(){ss.addEventListener&&ss.removeEventListener("load",loadCB),ss.media=media||"all"}var ref,doc=w.document,ss=doc.createElement("link");if(before)ref=before;else{var refs=(doc.body||doc.getElementsByTagName("head")[0]).childNodes;ref=refs[refs.length-1]}var sheets=doc.styleSheets;ss.rel="stylesheet",ss.href=href,ss.media="only x",function ready(cb){if(doc.body)return cb();setTimeout(function(){ready(cb)})}(function(){ref.parentNode.insertBefore(ss,before?ref:ref.nextSibling)});var onloadcssdefined=function(cb){for(var resolvedHref=ss.href,i=sheets.length;i--;)if(sheets[i].href===resolvedHref)return cb();setTimeout(function(){onloadcssdefined(cb)})};return ss.addEventListener&&ss.addEventListener("load",loadCB),(ss.onloadcssdefined=onloadcssdefined)(loadCB),ss};"undefined"!=typeof exports?exports.loadCSS=loadCSS:w.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89937219-2"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+      
+                gtag('config', 'UA-89937219-2');
+        </script>
+        <link rel="shortcut icon" href="apple-touch-icon.png">
+    </head>
+    <body>
+        <div class="main-header" id="top">
+            <div class="logo">
+                <a href="index.html"><img src="apple-touch-icon.png" alt="website logo"></a>
+            </div>
+            <nav class="nav-container">
+                <div class="hamburger-menu">
+                </div>
+                <div class="text-menu">
+                    <!--<a href="#" class="nav-btn">About me</a>-->
+                    <a href="http://www.eloisechoi.com/21-1-resume-s.pdf" class="nav-btn">Resume</a>
+                </div>
+            </nav>
+        </div>
+
+        <div>
+            <div class="project-full-container">
+                <div class="p-title-section">
+                    <h1>04</h1>
+                    <h2>website design & development</h2>
+                    <h3>TEDxSFU</h3>
+                    <div class="division_line"></div>
+                    <div class="project_des">
+                        <p class="project_des_l">TEDxSFU is a non-profit program that hosts local, self-organized events each year that bring people together to share a TED-like experience.
+                        <br/><br/>
+                        I was part of the 2017 team serving as the web developer. My job includes <span>designing and creating the website and the program guide</span> as well as updating contents on a bi-weekly basis independently.
+                        <br/><br/>
+                        For the year 2017, the theme selected was “Shift”. I based my design on the theme, aiming to provide a shifting new experience for the users.
+                        <br/><br/>
+                        Website link: <a class = "link" href="http://www.sfu.ca/~xca65/2017tedxsfu" target="_blank">2017 TEDxSFU website</a></p>
+                        <div class="project_des_r">
+                            <p class="des_r_content_con">
+                                Role:
+                                <span>Website Design</span>
+                                <span>Website Development</span>
+                            </p>
+
+                            <p class="des_r_content_con">
+                                Client:
+                                <span>TEDxSFU 2017</span>
+                            </p>
+
+                            <p class="des_r_content_con">
+                                Date:
+                                <span>2017 Jan -Nov</span>
+                            </p>
+
+                            <p class="des_r_content_con">
+                                Skills:
+                                <span>Website Design, Programming (HTML, CSS, JS, JQuery), Research.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-video-con">
+                    <video id="tedxsfu_v1" class="lazyVideo" loop muted poster="img/ted_home-blur.jpg" data-src="img/ted_home.jpg" preload="none">
+                        <source src="img/ted_homepage.mp4" type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="caption">Older version of home page, screen recording from <a class="link" target="_blank" href="http://www.sfu.ca/~xca65/old/TEDxSFU/">www.sfu.ca/~xca65/TEDxSFU/</a></p>
+                <div class="p-content">
+                    <h2>Concept</h2>
+                    <p>
+                        In the light of TED's spirit of spreading profound ideas within the context of Vancouver, SFU and more importantly, the theme of 2017, <span>SHIFT</span>, I aimed at shifting users' experience and perspective when designing the website. <br/><br/>In order to do so, I wanted to explicitly <span>show</span> the idea of shifting visually and through interaction to build a connection between the website and the viewers.
+                        I then decided to use the following form of <span>horizontal scrolling</span> as well as the shifting text on the homepage (as above).
+
+                        <br/><br/>First iteration homepage link: <a class="link" target="_blank" href="http://www.sfu.ca/~xca65/old/TEDxSFU/">www.sfu.ca/~xca65/TEDxSFU/</a>
+                    </p>
+                </div>
+                <div class="img-video-con">
+                    <video id="tedxsfu_v2" class="lazyVideo" loop muted poster="img/ted_horizontal-blur.jpg" data-src="img/ted_horizontal.jpg" preload="none">
+                            <source src="img/horizontal_scroll.mp4" type="video/mp4"/>
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="caption">Horizontal Scrolling from about page</p>
+                <!--paragraph two-->
+                <div class="p-content">
+                    <h2>Style Decisions and Wireframe</h2>
+                    <p>
+                        During the early ideation phrase, I worked closely with the graphic designer and cooperate with each other to develop a basic style guide both for the website and the printing materials, in order to provide a consistent TEDxSFU brand awareness. In terms of color, We used the color of TED, black, mixed with the color of SFU, red, a delightful combination.
+                        <br/><br/>
+                        As for the font, we used the classic Helvetica and Inconsola to convey a classic feeling for the content, but add more subtle animation to highlight the theme of shift.
+                        <br/><br/>
+                    </p>
+                </div>
+                <div class="img-video-con" id="p-collage-container">
+                    <div id="logo-decor">
+                        <img class="lazyload" src="img/ted_logo-blur.png" data-src="img/ted_logo.png" alt="ted logo">
+                        <noscript><img src="img/ted_logo.png" alt="ted logo"></noscript>
+                    </div>
+                    <div class="flexbox">
+                        <div class="OBO-img">
+                            <img class="lazyload" src="img/style_3-blur.jpg" data-src="img/style_3.jpg" alt="styleguide demo 1">
+                            <noscript><img src="img/style_3.jpg" alt="styleguide demo 1"></noscript>
+                        </div>
+                        <div class="OBO-img">
+                            <img class="lazyload" src="img/style_2-blur.jpg" data-src="img/style_2.jpg" alt="styleguide demo 2">
+                            <noscript><img src="img/style_2.jpg" alt="styleguide demo 2"></noscript>
+                        </div>
+                    </div>
+                </div>
+                <div id="p-collage-container-fullW">
+                    <img class="lazyload" src="img/ted-wireframe-blur.jpg" data-src="img/ted-wireframe.jpg" alt="wireframe">
+                    <noscript><img src="img/ted-wireframe.jpg" alt="wireframe"></noscript>
+                </div>
+                <div class="p-content">
+                    <p>
+                        Then I created a few prototypes using Adobe illustrator to communicate the overall feeling I was trying to achieve for the website and the program guide.
+                        <span class="explaination">(**The program guide was created after the website but went through the same iteration)</span>
+                        <br/><br/>
+                        I then distributed the design proposal to the team members on weekly meeting and gather feedback.
+                    </p>
+                </div>
+                <div class="img-video-con twoImage">
+                    <div class="program-wire">
+                        <img class="lazyload" src="img/program_wireframe-blur.jpg" data-src="img/program_wireframe.jpg" alt="program wireframe">
+                        <noscript><img src="img/program_wireframe.jpg" alt="program wireframe"></noscript>
+                    </div>
+                    <div>
+                    <video id="tedxsfu_v4" class="lazyVideo" loop muted autoplay controls poster="img/ted_program-blur.jpg" data-src="img/ted_program.jpg" preload="none">
+                            <source src="img/conference-guide.mp4" type="video/mp4"/>
+                            Your browser does not support the video tag.
+                    </video>
+                    </div>
+                </div>
+                <div class="p-content">
+                    <h2>Coding from scratch</h2>
+                    <p>
+                        After the layout is confirmed within the team, I built the website from scratch using <span>HTML, CSS and JQuery/JS</span>. I also researched and made use of many libraries from Github like fullpage.js. After analyzing the logic of the code, I also customized the code by myself.
+                        <br/><br/>
+                        After the completion of the website, I am also responsible for maintaining, updating contents and managing files from the <span>Godaddy Cpanel and Filezilla</span>.
+                    </p>
+                </div>
+                <div class="img-con">
+                    <img class="lazyload" src="img/tedxsfu_code-blur.jpg" data-src="img/tedxsfu_code.jpg" alt="tedxsfu-code"/>
+                    <noscript><img src="img/tedxsfu_code.jpg" alt="tedxsfu-code"></noscript>
+                    <p class="caption">screenshot of souce code</p>
+                </div>
+                <div class="p-content">
+                    <h2>Major Challenge and Iteraion</h2>
+                    <p>
+                        When we started to sell tickets back in August, after some dicussions with <span>the marketing team </span>regarding ticket sale. I realized despite the design perspective, I need to think from the marketing perspective and closely work with them to boost ticket sale.
+                        <br/><br/>
+                        In order to align with the marketing plan on the social media, which is presenting a few promotion videos asking questions like "how do you define 'shift'? " So I decided to change the design of the homepage by including the video as the background to keep people's attention, while keeping the "shifting" interaction when people scroll down. This allows the audience to really see and absorb the content which attracted them to buy a ticket.
+                        <br/><br/>
+                        <span>New homepage demo link:</span> <a href="http://www.sfu.ca/~xca65/2017tedxsfu/new-homepage-demo.html" target="_blank" class="link">http://www.sfu.ca/~xca65/2017tedxsfu/new-homepage-demo.html</a>
+                    </p>
+                </div>
+                <div class="img-video-con">
+                    <video id="tedxsfu_v3" class="lazyVideo" loop muted poster="img/new_homepage-blur.jpg" data-src="img/new_homepage.jpg" preload="none">
+                            <source src="img/new_home_record.mp4" type="video/mp4"/>
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="caption">New homepage screen recording</p>
+
+                <div class="p-content">
+                    <h2>Reflection</h2>
+                    <p>
+                        Because at the beginning of this position, I wasn't experienced enough to code a bug-free website. The production circle of the first version of the webpage span around one month. However, the horizontal scrolling was not working very well on the mobile site. I then spent another month to recreate the code specifically for the mobile site.
+                        <br/><br/>
+                        If I were to do this website again, I would separate the code for mobile and web at the beginning to accommodate the specific design decision I made.
+                    </p>
+                </div>
+                <div class="img-con">
+                    <img class="lazyload" src="img/conference_image-blur.jpg" data-src="img/conference_image.jpg" alt="conference guid final">
+                    <noscript><img src="img/conference_image.jpg" alt="conference guid final"></noscript>
+                    <p class="caption">Final team presentation at the day of the conference.</p>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <footer class="footer">
+            <img class="lazyload" src="img/footer-blur.png" data-src="img/footer.png" alt="footer background">
+            <noscript><img src="img/footer.png" alt="footer background"></noscript>
+            <a href="#top"><p>Back to top</p></a>
+        </footer>
+        <script>
+            window.sr = ScrollReveal();
+            sr.reveal('.img-video-con', {distance: '200px', duration: 1500});
+            sr.reveal('.p-content',{distance: '200px', duration: 1500});
+            sr.reveal('.project_des',{distance: '200px', duration: 1500});
+            sr.reveal('.OBO-img',{distance: '200px', duration: 1500});
+        </script>
+        <script>
+            var $video_one = $('#tedxsfu_v1');
+            var $video_two = $('#tedxsfu_v2');
+            var $video_three = $('#tedxsfu_v3');
+
+            $video_one.on('mouseenter focus', function(e){
+                e.preventDefault();
+                $video_one.get(0).play();
+            });
+
+            $video_two.on('mouseenter focus', function(e){
+                e.preventDefault();
+                $video_two.get(0).play();
+            });
+
+            $video_three.on('mouseenter focus', function(e){
+                e.preventDefault();
+                $video_three.get(0).play();
+            });
+
+            $video_one.on('mouseout blur', function(e){
+                e.preventDefault();
+                $video_one.get(0).pause();
+            });
+
+            $video_two.on('mouseout blur', function(e){
+                e.preventDefault();
+                $video_two.get(0).pause();
+            });
+
+            $video_three.on('mouseout blur', function(e){
+                e.preventDefault();
+                $video_three.get(0).pause();
+            });
+        </script>
+        <script src="js/lazysizes.min.js"></script>
+        <script>
+            //for video lazy loading
+            var lazyVideo = document.getElementsByClassName('lazyVideo');
+            for(var i=0; i<lazyVideo.length; i++){
+                lazyVideo[i].setAttribute('poster', lazyVideo[i].getAttribute('data-src'));
+                lazyVideo[i].load();
+            }
+        </script>
+    </body>
+    
+</html>

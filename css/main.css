@@ -1,0 +1,794 @@
+@font-face{
+    font-family: tradeGothic;
+    src: url(../font/trade-gothic-lt-std-bold-condensed.otf);
+}
+
+@font-face{
+    font-family: InterBoldItalic;
+    src: url(../font/Inter-BoldItalic.otf);
+}
+
+@font-face{
+    font-family: GothamBold;
+    src:url(../font/Gotham-Bold.otf);
+}
+
+@font-face{
+    font-family: GothamBook;
+    src:url(../font/Gotham-Book.otf);
+}
+
+@font-face{
+    font-family: FuturaBook;
+    src:url(../font/FuturaStd-Book.otf);
+}
+
+@font-face{
+    font-family: InterBold;
+    src:url(../font/Inter-Bold.otf);
+}
+
+@font-face{
+    font-family: InterBook;
+    src:url(../font/Inter-Light-BETA.otf);
+}
+
+@font-face{
+    font-family: PingFang;
+    src:url(../font/PingFang-Light.ttf);
+}
+
+*{
+    transition: color 500ms cubic-bezier(.19,1,.22,1) 0ms;
+    transition: all 500ms cubic-bezier(.19,1,.22,1) 0ms;
+}
+
+html{
+    position: relative;
+}
+
+body{
+    padding: 2rem;
+    padding-bottom: 200px;
+    position: relative;
+}
+
+code {
+    background-color: #EEE;
+    padding: 0.5rem;
+    display: block;
+}
+
+h1{
+    font-family:InterBold, GothamBold, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family:InterBold, GothamBold, sans-serif;
+    font-size: 1.2rem;
+}
+
+h3{
+    font-family: InterBold, GothamBold, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h4{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+p{
+    font-family: InterBook, GothamBook, serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.processAnalysis img, video, .listing img{
+    max-width: 100%;
+}
+
+.explaination{
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: grey;
+}
+
+.flexBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-flex-container{
+    display:flex; 
+    justify-content: space-around; 
+    align-items: flex-end;
+}
+
+/*Style for style guide*/
+.styleGuide section{
+    border-bottom: 0.5px solid grey;
+    border-top: 0.5px solid grey;
+    padding: 2rem 0rem;
+}
+
+/*inline text*/
+.inText-link{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #212121;
+    border-bottom: 1px dotted #53FEC5;
+}
+
+.inText-link:hover,
+.inText-link:focus{
+    border-bottom: 2px solid #53FEC5;
+    color: #53FEC5;
+}
+
+/*navigation button*/
+.nav-btn{
+    text-decoration: none;
+    color: #000AFF;
+    font-family: InterBoldItalic, tradeGothic, sans-serif;
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #000AFF;
+    font-size: 0.8rem;
+    margin: 0 0.6rem;
+}
+
+.nav-btn:focus,
+.nav-btn:hover{
+    /*background-color: #53fec5;*/
+}
+
+.logo{
+    width: 100px;
+    position: absolute;
+    top:2rem;
+    left:2rem;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.nav-container{
+    position: absolute;
+    top:4rem;
+    right:2rem; 
+}
+/*introduction*/
+.intro{
+    padding: 7rem 0 7rem 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-container{
+    /*introduction animation*/
+    height: auto;
+    /*margin-top: -6rem;*/
+    position: relative;
+}
+
+.profile-container img:nth-child(2){
+    width: 50%;
+    padding-left: 25%;
+    animation-name: floating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.homepageGraphic-bg{
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+.intro-title{
+    display:flex;
+    align-items: center;
+}
+
+.intro-container h1{
+    font-size: 3rem;
+    margin:0;
+    padding:0;
+    font-family: InterBold, GothamBold, sans-serif;
+}
+
+.intro-container h2{
+    line-height: 1.6rem;
+    max-width: 500px;
+    font-weight: 600;
+    font-family: InterBook, GothamBook, sans-serif;
+    font-size: 1rem;
+}
+
+.intro-container .introbg{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index:-99;
+}
+
+.read-more-btn img{
+    width:20%;
+    padding: 0 1rem;
+}
+
+.read-more-btn:hover, .read-more-btn:focus{
+    transform: translateX(5px);
+}
+
+.contact-l{
+    position: fixed;
+    left: -1rem;
+    bottom: 100px;
+    transform: rotate(-90deg) translateX(50%);
+}
+
+/*Hamburger menu*/
+.hamburger-menu{
+    background:black;
+    position:relative;
+    transform: translateY(2px);/*bar spacing*/
+    display:none;
+}
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+    width: 20px;
+    height: 2px;
+}
+
+.hamburger-menu:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	background: black;
+}
+
+.hamburger-menu:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 5px;
+	background: black;
+}
+
+/*project-navigation*/
+.project-nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right:20px;
+    top: 50vh;
+    transform: translateY(-50%);
+}
+
+.project-nav svg{
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+/*general button*/
+/*.general-btn{
+    background-image: url(http://www.sfu.ca/~xca65/IAT339/portfolio/img/view-project-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width:156.8px;
+    height: 59.2px;
+    display:flex;
+    position:relative;
+    cursor: pointer;
+}*/
+
+.general-btn:hover, .general-btn:focus{
+    transform: translate(2px,2px);
+}
+
+.general-btn.move{
+    transform: translate(2px,2px);
+}
+
+.general-btn p {
+    position:absolute;
+    top:50%;
+    left: 10%;
+    transform: translateY(-50%);
+    margin:0;
+    padding:0;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000AFF;
+    font-family: InterBoldItalic, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/*Style for image on homepage*/
+.image-collage{
+    position: relative;
+}
+
+.image-collage{
+    opacity: 0.7;
+}
+
+.image-collage.move img{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/*.image-collage img:nth-child(1){
+    width: 100%;
+}*/
+
+/*class directly on images*/
+.img-bg{
+    
+}
+
+/*Style for listing*/
+.listing-content-container > a > div{
+    display:inline-block;
+}
+
+.listing{
+    display: flex;
+    align-items: top;
+    align-content: center;
+    width:80%;
+    margin:auto;
+}
+
+.listing-content-container{
+    position: relative;
+    width:50%;
+    padding: 1.5rem;
+    margin: 4rem 2rem 0 2rem;
+    background-color: #fafafa;
+}
+
+.listing2{
+    margin-top:6rem;
+}
+
+.listing-content-container img{
+    opacity: 0.8;
+}
+
+.listing-title{
+    position: absolute;
+    top:-40px;
+    left:-20px;
+    max-width:50%;
+}
+
+.listing-title h1{
+    font-family: InterBold, GothamBold, sans-serif;
+    margin:0;
+    font-size: 2rem;
+    color:#232323;
+    border-bottom: 3px solid #232323;
+    width: 60px;
+}
+
+.listing-title h2{
+    font-family: InterBook, GothamBold, sans-serif;
+    margin-top:0;
+    font-size: 1.2rem;
+    color: #232323;
+    padding-top: 0.5rem;
+    display:none;
+    /*color: #000AFF;*/
+}
+
+/*project detail*/
+.project-full-container{
+    position: relative;
+    height: auto;
+    width: 60%;
+    margin:auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.p-title-section h1{
+    font-family: InterBold, GothamBold, sans-serif;
+    font-size: 1rem;
+}
+
+.p-title-section h2{
+    font-size: 3rem;
+    margin:0;
+    padding:0;
+    margin-bottom: 5px;
+}
+
+.p-title-section h3{
+    font-family: InterBold, GothamBold, sans-serif;
+    padding:0;
+    margin:0;
+    font-size: 1.5rem;
+}
+
+.division_line{
+    width:50px;
+    height: 8px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+.project_des{
+    display: flex;
+    font-family: InterBook, GothamBook, serif;
+    font-weight: bold;
+    line-height: 1.3rem;
+}
+
+.project_des_l{
+    width: 65%;
+    padding-right: 10%;
+    padding-top:20px;
+}
+
+.project_des_r{
+    width: 35%;
+    padding-top:20px;
+}
+
+.project_des_r_cn{
+    width: 35%;
+    padding-top:20px;
+}
+
+.project_des_r_cn span{
+    font-family: PingFang, sans-serif;
+    display:block;
+}
+
+.project_des_r span,
+.project_des_l span{
+    font-family: InterBold, GothamBold, sans-serif;
+    display:block;
+}
+
+.img-video-con{
+    width: 100%;
+    height: auto;
+    margin-top:50px;
+    overflow:hidden;
+    display: flex; 
+    align-items: center;
+}
+
+.img-video-con video,
+.img-video-con img{
+    width: 100%;
+}
+
+.img-con img{
+    width: 100%;
+    padding-top:30px;
+    background:#f9f9f9;
+}
+
+.caption{
+    padding:10px 0px;
+    width: 100%;
+    text-align: center;
+    color:#a5a5a5;
+    font-family: InterBook, GothamBook, sans-serif;
+    font-weight: bold;
+    margin:0;
+    font-size: 0.67rem;
+    display:block;
+}
+
+.p-content{
+    width: 80%;
+    margin:auto;
+    margin-top:40px;
+}
+
+.p-content h2{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.p-content p{
+    line-height: 1.5em;
+}
+
+.p-content span{
+    font-family: InterBold, GothamBold, sans-serif;
+}
+
+.link{
+    color: #2b69c7;
+    border-bottom: 1px dotted #2b69c7;
+}
+
+.OBO-img img{
+    position: relative;
+    width: 93%;
+}
+
+.twoImage{
+    display: flex; 
+    align-items: center;
+}
+
+.twoImage div{
+    margin: 0px 10px;
+}
+
+#p-collage-container {
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+    padding:40px 20px;
+    position: relative;
+}
+
+.p-collage-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#p-collage-container-fullW{
+    /*background-color: #f8f8f8;*/
+    width: 100%;
+    /*padding:40px 20px;*/
+    margin-top: -1px;
+}
+
+.p-collage-container-fullW{
+    /*background-color: #f8f8f8;*/
+    width: 100%;
+    margin-top: -1px;
+}
+
+#p-collage-container-fullW img {
+    width: 100%;
+}
+
+.p-collage-container-fullW img{
+    width: 100%;
+}
+
+#logo-decor {
+    position: absolute;
+    top:0;
+    right: 0;
+    width:200px;
+}
+
+/*footer*/
+.footer{
+    width:100%;
+    position:absolute;
+    left: 0;
+    bottom: 0px;
+}
+
+.footer img{
+    width: 100%;
+}
+
+.footer p{
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    color: #000AFF;
+    transform: rotate(-20deg);
+    font-size: 1rem;
+    font-family: InterBoldItalic, sans-serif;
+    cursor: pointer;
+}
+
+/*grid at the back*/
+#grid{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    z-index: -1;
+}
+
+.box{
+    border-right: 1px solid #ececec;
+    width: 20%;
+}
+
+/*animation*/
+@keyframes floating {
+    0% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, 40px);}
+    80% {transform: translate(0px, 0px);}
+    100%{transform: translate(0px, 0px);}
+}
+
+/*Media query starts here*/
+@media (max-width: 60rem){
+    body{
+        padding-bottom: 50px;
+    }
+
+    body.homepage{
+        padding-bottom: 150px;
+    }
+
+     /*listing1*/
+     .image-collage{
+        max-width:100%;
+        margin-bottom: 20px;
+    }
+
+    .listing{
+        width:100%;
+    }
+
+    .listing2,
+    .listing-content-container{
+        margin-top: 5rem;
+    }
+
+    .listing-title h1{
+        font-size: 1.5rem;
+    }
+
+    .intro{
+        padding-left: 2rem;
+    }
+
+    /*inside project*/
+    .project-full-container{
+        width:100%;
+    }
+
+    .p-content{
+        width: 90%;
+    }
+
+    .logo{
+        width:70px;
+    }
+
+    .homepage .logo{
+        width: 100px;
+    }
+
+    .footer p{
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+
+@media (max-width: 37.5rem){
+    body{
+        padding: 1rem;
+    }
+
+    .listing{
+        flex-wrap: wrap;
+    }
+
+    /*header responsive*/
+    .hamburger-menu{
+        display:block;
+    }
+
+    .text-menu{
+        display:none;
+    }
+
+    .text-menu.open{
+        display:block;
+    }
+
+    .intro{
+        padding-top:7rem;
+        flex-wrap: wrap;
+    }
+
+    .profile-container{
+        width: 100%;
+        margin-top:1rem;
+    }
+
+    .read-more-btn img{
+        width:50%;
+    }
+    
+    .homepage .logo{
+        width:70px;
+    }
+
+    .general-btn p{
+        top:35%;
+    }
+
+    /*listing responsive*/
+    .listing-title h1{
+        font-size: 2rem;
+    }
+
+    .listing-title h2{
+        font-size: 1rem;
+    }
+
+    .listing-content-container{
+        width:90%;
+    }
+
+    /*inside project mediaquery*/
+    .project-full-container{
+        width:90%;
+        margin-top:90px;
+    }
+
+    .project_des{
+        flex-wrap: wrap;
+    }
+
+    .project_des_l{
+        width: 100%;
+        padding-right:0;
+    }
+
+    .project_des_r{
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project_des_r p{
+        margin: 5px 20px 5px 0;
+    }
+
+    .p-title-section h1{
+        font-size: 0.8rem;
+    }
+    
+    .p-title-section h2{
+        font-size: 2rem;
+    }
+    
+    .p-title-section h3{
+        font-size: 1rem;
+    }
+
+    /*footer*/
+
+    .footer p{
+        bottom: 10px;
+        right: 10px;
+    }
+}

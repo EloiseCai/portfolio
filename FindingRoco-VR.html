@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <title>Meet Eloise | Finding Roco - VR Game</title>
+        <meta name="description" content="I am Eloise, a Vancouver-based interaction designer. I am passionated about bringing technology and art together to unleash exciting experience for users.">
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <!---stylesheet-->
+        <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="css/main.css"></noscript>
+        <!--scrolling effect from https://github.com/jlmakes/scrollreveal-->
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <!--From https://github.com/krasimir/gifffer-->
+        <script type="text/javascript" src="js/gifffer.min.js"></script>
+        <!--in case-->
+        <script>!function(w){"use strict";var loadCSS=function(href,before,media){function loadCB(){ss.addEventListener&&ss.removeEventListener("load",loadCB),ss.media=media||"all"}var ref,doc=w.document,ss=doc.createElement("link");if(before)ref=before;else{var refs=(doc.body||doc.getElementsByTagName("head")[0]).childNodes;ref=refs[refs.length-1]}var sheets=doc.styleSheets;ss.rel="stylesheet",ss.href=href,ss.media="only x",function ready(cb){if(doc.body)return cb();setTimeout(function(){ready(cb)})}(function(){ref.parentNode.insertBefore(ss,before?ref:ref.nextSibling)});var onloadcssdefined=function(cb){for(var resolvedHref=ss.href,i=sheets.length;i--;)if(sheets[i].href===resolvedHref)return cb();setTimeout(function(){onloadcssdefined(cb)})};return ss.addEventListener&&ss.addEventListener("load",loadCB),(ss.onloadcssdefined=onloadcssdefined)(loadCB),ss};"undefined"!=typeof exports?exports.loadCSS=loadCSS:w.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89937219-2"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+      
+                gtag('config', 'UA-89937219-2');
+        </script>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    </head>
+    <body>
+        <div class="main-header" id="top">
+            <div class="logo">
+                <a href="index.html"><img src="apple-touch-icon.png" alt="website logo"></a>
+            </div>
+            <nav class="nav-container">
+                <div class="hamburger-menu"></div>
+                <div class="text-menu">
+                    <!--<a href="#" class="nav-btn">About me</a>-->
+                    <a href="http://www.eloisechoi.com/21-1-resume-s.pdf" class="nav-btn">Resume</a>
+                </div>
+            </nav>
+        </div>
+
+        <div>
+            <div class="project-full-container">
+                <div class="p-title-section">
+                    <h1>07</h1>
+                    <h2>VR experience</h2>
+                    <h3>Finding Roco</h3>
+                    <div class="division_line"></div>
+                    <div class="project_des">
+                        <p class="project_des_l">
+                            This is an academic project I did with 4 other team members. We designed a VR game featuring 3 levels and puzzle solving, 
+                            aiming to explore different types of interaction in the immersive environment. We developed this game on Oculus Rift using 
+                            Unity and created essential 3D assets using Maya.
+                        <br/><br/>
+                            During the development process, we also did some usability testings to see how they feel and react within the VR environment. Based 
+                            on the feedback, we were able to modify our design like movement speed, the scale of items.
+                        </p>
+                        <div class="project_des_r">
+                            <p class="des_r_content_con">
+                                Role:
+                                <span>Design VR experience and interaction</span>
+                                <span>Unity Programming</span>
+                            </p>
+
+                            <p class="des_r_content_con">
+                                Client:
+                                <span>Academic project</span>
+                            </p>
+
+                            <p class="des_r_content_con">
+                                Date:
+                                <span>2018 Spring</span>
+                            </p>
+
+                            <p class="des_r_content_con">
+                                Skills:
+                                <span>Interaction Design, Game Design, Programming (C#)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-video-con">
+                    <video loop controls class="lazyVideo" poster="img/iat445-poster.jpg" data-src="img/iat445-poster.jpg" preload>
+                            <source src="img/IAT 445 - Final Video.mov" type="video/mp4"/>
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="caption">Interview video</p>
+            </div>
+        </div>
+        <!--footer-->
+        <footer class="footer">
+                <img class="lazyload" src="img/footer.png" alt="footer background">
+                <noscript><img src="img/footer.png" alt="footer background"></noscript>
+                <a href="#top"><p>Back to top</p></a>
+        </footer>
+
+        <script>
+            window.onload = function() {
+                Gifffer();
+            }
+        </script>
+    </body>
+</html>

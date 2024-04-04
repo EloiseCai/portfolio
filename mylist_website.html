@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <title>Meet Eloise | Mylist IA redesign</title>
+        <meta name="description" content="I am Eloise, a Vancouver-based interaction designer. I am passionated about bringing technology and art together to unleash exciting experience for users.">
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <!---stylesheet-->
+        <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="css/main.css"></noscript>
+        <!--scrolling effect from https://github.com/jlmakes/scrollreveal-->
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <!--From https://github.com/krasimir/gifffer-->
+        <script type="text/javascript" src="js/gifffer.min.js"></script>
+        <!--in case-->
+        <script>!function(w){"use strict";var loadCSS=function(href,before,media){function loadCB(){ss.addEventListener&&ss.removeEventListener("load",loadCB),ss.media=media||"all"}var ref,doc=w.document,ss=doc.createElement("link");if(before)ref=before;else{var refs=(doc.body||doc.getElementsByTagName("head")[0]).childNodes;ref=refs[refs.length-1]}var sheets=doc.styleSheets;ss.rel="stylesheet",ss.href=href,ss.media="only x",function ready(cb){if(doc.body)return cb();setTimeout(function(){ready(cb)})}(function(){ref.parentNode.insertBefore(ss,before?ref:ref.nextSibling)});var onloadcssdefined=function(cb){for(var resolvedHref=ss.href,i=sheets.length;i--;)if(sheets[i].href===resolvedHref)return cb();setTimeout(function(){onloadcssdefined(cb)})};return ss.addEventListener&&ss.addEventListener("load",loadCB),(ss.onloadcssdefined=onloadcssdefined)(loadCB),ss};"undefined"!=typeof exports?exports.loadCSS=loadCSS:w.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89937219-2"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+      
+                gtag('config', 'UA-89937219-2');
+        </script>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    </head>
+    <body>
+        <div class="main-header" id="top">
+            <div class="logo">
+                <a href="index.html"><img src="apple-touch-icon.png" alt="website logo"></a>
+            </div>
+            <nav class="nav-container">
+                <div class="hamburger-menu"></div>
+                <div class="text-menu">
+                    <!--<a href="#" class="nav-btn">About me</a>-->
+                    <a href="http://www.eloisechoi.com/21-1-resume-s.pdf" class="nav-btn">Resume</a>
+                </div>
+            </nav>
+        </div>
+
+        <div>
+            <div class="project-full-container">
+                <div class="p-title-section">
+                    <h1>06</h1>
+                    <h2>proposal of infomation architecture redesign</h2>
+                    <h3>Craigslist-Mylist</h3>
+                    <div class="division_line"></div>
+                    <div class="project_des">
+                        <p class="project_des_l">This is an academic project I did in teams of two. In this project, we reorganized the information architecture of craigslist and rebuild the web and mobile site to make it more accessible by users.
+                        <br/><br/>
+                        We as a team developed the new information architecture together. Then, when executing, I am mainly responsible for creating wireframes and code for the desktop version.
+                        <br/><br/>
+                        The redesign process including analyzing function specifications and content requirements, iterated flow chart, wireframe, and development.
+                        <br/><br/>
+                        Website link: <a class = "link" href="http://www.sfu.ca/~xca65/P03-Alison-Wong-Xiangyu-Cai/">www.sfu.ca/~xca65/P03-Alison-Wong-Xiangyu-Cai/</a></p>
+                        <div class="project_des_r">
+                            <p class="des_r_content_con">
+                                Role:
+                                <span>Inforamtion Architecture Redesign</span>
+                                <span>Code the responsive website</span>
+                            </p>
+
+                            <p class="des_r_content_con">
+                                Client:
+                                <span>Academic project</span>
+                            </p>
+
+                            <p class="des_r_content_con">
+                                Date:
+                                <span>2015 Summer (2 months)</span>
+                            </p>
+
+                            <p class="des_r_content_con">
+                                Skills:
+                                <span>Information Architecture, Analysis, prototype, Programming (HTML, CSS, JS).</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-video-con">
+                    <video id="mylist_v1" class="lazyVideo" loop muted poster="img/iat235_home.png" preload>
+                            <source src="img/iat235_home.mp4" type="video/mp4"/>
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="caption">Homepage screen recording <a class="link" target="_blank" href="http://www.sfu.ca/~xca65/P03-Alison-Wong-Xiangyu-Cai/">www.sfu.ca/~xca65/P03-Alison-Wong-Xiangyu-Cai/</a></p>
+                <div class="p-content">
+                    <h2>Identify Problems</h2>
+                    <p>
+                        By looking into the original website, we listed a few problems we are experiencing as well as interviewed other users about their experiences.
+                        <br/><br/>
+                        Then we concluded some prominent features we wanted to change: first, the text is too heavy, the hierarchy is not clear, some function is not seamless. Based on these three insights, I decided to use info graphic to indicate categories which clearly identified the top hierarchy.<br/>
+                        Then we created a new structure of hierarchy for our chosen categories, housing based on the <span style="font-family: 'boldfont'">purpose</span> of the users.
+                        <br/><br/>
+                        Lastly, I decided to make the posting function more obvious and seamless.
+                    </p>
+                </div>
+                <div class="img-con">
+                    <img src="img/comparison_1.jpg"/>
+                    <p class="caption">Original Craigslist site screenshot and proposed site screenshot</p>
+                </div>
+                <!--paragraph two-->
+                <div class="p-content">
+                    <h2>Flowchart and Wireframe</h2>
+                    <p>
+                       We first looked into the information architecture (IA) of the original website by creating different flowcharts that indicate how the information flows within the site. Then based on the problems emerged from this process as well as the analysis of the content requirements and function specifications, we consolidated our flowcharts. And of course, this goes through different phase and we concised the steps weeks by weeks based on feedbacks.
+                    </p>
+                </div>
+                <div class="img-con">
+                    <img src="img/mylist-wireframes.png"/>
+                </div>
+                <div class="p-content">
+                    <p>
+                        After spending a lot of time builidng the new information architecture, I started apply visual representations for these information. To do so, I present these plans using these basic wireframes and coded using basic HTML that are able to click around and get a sense of what's going on.
+                    </p>
+                </div>
+                <div class="img-con">
+                    <img src="img/mylist-wireframes-2.png"/>
+                </div>
+                <div class="p-content">
+                    <h2>Coding from scratch and Responsiveness</h2>
+                    <p>
+                        Then we build this website from scratch. My teammate is responsible for doing the mobile version and I am responsible for doing the desktop version. <br/><br/>
+                        <a class="link" href="http://www.sfu.ca/~xca65/P03-Alison-Wong-Xiangyu-Cai/" target="_blank">View Live Website</a>
+                        <br/><br/>
+                        Below is the how the wireframes above, which is a redesign for the posting function, appears on the live website.
+                    </p>
+                </div>
+                <div class="img-con">
+                    <img data-gifffer="img/mylist-posting.gif" data-gifffer-width="100%" data-gifffer-height="100%"/>
+                    <p class="caption">The seamless posting function that combines all the steps into one page</p>
+                </div>
+                <div class="p-content">
+                    <h2>Reflection</h2>
+                    <p>
+                        Just as the website shown, my coding skill for building a website back then wasn't proficient enough to accomplish all the refinement we were proposing.  But the working cycle of this project is intact and well-documented.
+                        <br/><br/>
+                        I learned a lot about information architecture and importance of organizing them on a webpage. I think the coding of the website can be developed further. Despite time constraint, I am satisfied with the result.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <footer class="footer">
+                <img class="lazyload" src="img/footer.png" alt="footer background">
+                <noscript><img src="img/footer.png" alt="footer background">
+                </noscript>
+                <a href="#top"><p>Back to top</p></a>
+        </footer>
+
+        <script>
+            window.onload = function() {
+                Gifffer();
+            }
+
+        </script>
+        <script>
+            window.sr = ScrollReveal();
+            sr.reveal('.img-video-con', {distance: '200px', duration: 1500});
+            sr.reveal('.img-con', {distance: '200px', duration: 1500});
+            sr.reveal('.p-content',{distance: '200px', duration: 1500});
+            sr.reveal('.project_des',{distance: '200px', duration: 1500});
+            sr.reveal('.OBO-img',{distance: '200px', duration: 1500});
+        </script>
+        <script>
+            var $video_one = $('#mylist_v1');
+            var $video_two = $('#mylist_v2');
+            var $video_three = $('#mylist_v3');
+            var $video_four = $('#mylist_v4');
+
+            $video_one.on('mouseenter focus', function(e){
+                e.preventDefault();
+                $video_one.get(0).play();
+            });
+
+            $video_two.on('mouseenter focus', function(e){
+                e.preventDefault();
+                $video_two.get(0).play();
+            });
+
+            $video_three.on('mouseenter focus', function(e){
+                e.preventDefault();
+                $video_three.get(0).play();
+            });
+
+            $video_one.on('mouseout blur', function(e){
+                e.preventDefault();
+                $video_one.get(0).pause();
+            });
+
+            $video_two.on('mouseout blur', function(e){
+                e.preventDefault();
+                $video_two.get(0).pause();
+            });
+
+            $video_three.on('mouseout blur', function(e){
+                e.preventDefault();
+                $video_three.get(0).pause();
+            });
+        </script>
+    </body>
+</html>
